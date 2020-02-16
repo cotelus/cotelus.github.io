@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Poppins:600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+        <title>DUNNOW</title>
+
+        <script src="scripts/script.js"></script>  
+    </head>
+<body>
+    <!-- Barra de navegación 
+        Los elementos de la web hay que ponerlos de abajo a arriba para que se muestren de izquierda a derecha 
+    -->
+    <nav class="navbar" id="myTopnav">
+        <h3><a href="#">DUNNOW</a></h3>
+        <a href="#direccion" onclick="activeButtonNavbar(event)">Direccion</a>
+        <a href="#formulario" onclick="activeButtonNavbar(event)">Contacto</a>
+        <a href="#galeria" onclick="activeButtonNavbar(event)"> Galería </a>
+        <a class="active" href="#festival" onclick="activeButtonNavbar(event)"> Festival </a>
+        <a href="javascript:void(0);" class="icon" onclick="showBurguerMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div id="main">
+        <main>
+            <aside>
+                <div>
+                    <img src="https://via.placeholder.com/100x100">
+                    <p>Elementos adicionales</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/100x100">
+                    <p>Elementos adicionales</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/100x100">
+                    <p>Elementos adicionales</p>
+                </div>
+            </aside>
+
+            <!-- Seccion principal donde va el carousell y una explicacion/introducción a la web -->
+            <section id="festival">
+                <h1> DUNNOW Festival </h1>
+                <!-- CAROUSELL -->
+                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell">
+                        <img src="assets/imgs/carousell-1.jpg">
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="assets/imgs/carousell-2.jpg">
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="assets/imgs/carousell-3.jpg">
+                    </div>
+                </div>
+                <div id="festival-text-container">
+                    <h3>
+                        En DUNNOW Festival, la música y las sensaciones son el plato fuerte de la experiencia.
+                    </h3>
+                    <p>
+                        Consectetur id Lorem reprehenderit esse velit. Nostrud ipsum ad nisi exercitation amet est elit in commodo non ipsum. Do voluptate ex enim nulla ea et dolor laborum duis. Officia nostrud sint sunt nostrud laboris aliquip. Aliquip reprehenderit sunt pariatur eiusmod ea tempor in. Laborum voluptate sunt nulla reprehenderit dolor ex. Esse culpa aute eiusmod labore Lorem tempor eu occaecat in commodo commodo.
+                    </p>
+                    <p>
+                        Consectetur id Lorem reprehenderit esse velit. Nostrud ipsum ad nisi exercitation amet est elit in commodo non ipsum. Do voluptate ex enim nulla ea et dolor laborum duis. Officia nostrud sint sunt nostrud laboris aliquip. Aliquip reprehenderit sunt pariatur eiusmod ea tempor in. Laborum voluptate sunt nulla reprehenderit dolor ex. Esse culpa aute eiusmod labore Lorem tempor eu occaecat in commodo commodo.
+                    </p>
+                    <p>
+                        Consectetur id Lorem reprehenderit esse velit. Nostrud ipsum ad nisi exercitation amet est elit in commodo non ipsum. Do voluptate ex enim nulla ea et dolor laborum duis. Officia nostrud sint sunt nostrud laboris aliquip. Aliquip reprehenderit sunt pariatur eiusmod ea tempor in. Laborum voluptate sunt nulla reprehenderit dolor ex. Esse culpa aute eiusmod labore Lorem tempor eu occaecat in commodo commodo.
+                    </p>
+                <div>
+
+            </section>
+
+            <!-- Seccion donde hay una serie de imágenes del festival -->
+            <section id="galeria">
+                <h1> La gente viene y se hace fotos </h1>
+                <div id="galeria-img-container">
+                    <div class="galeria-item-a">
+                        <img src="assets/imgs/galeria-1.jpg">
+                    </div>
+                    <div>
+                        <img src="assets/imgs/galeria-2.jpg">
+                    </div>
+                    <div>
+                        <img src="assets/imgs/galeria-3.jpg">
+                    </div>
+                    <div class="galeria-item-b">
+                        <img src="assets/imgs/galeria-4.jpg">
+                    </div>
+                    <div class="galeria-item-c">
+                        <img src="assets/imgs/galeria-5.jpg">
+                    </div>
+                    <div class="galeria-item-d">
+                        <img src="assets/imgs/galeria-6.jpg">
+                    </div>
+                <div>
+
+            </section>
+
+             <!-- Seccion donde hay una serie de imágenes del festival -->
+            <section id="formulario">
+                <h1> Contáctanos </h1>
+                <div class="container">
+                    <form name="contacto" action="#">
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="fname">Nombre</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="fname" name="firstname" placeholder="Nombre..." required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="lname">Correo electrónico</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="email" name="email" placeholder="Correo..." required>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="subject">Contenido</label>
+                        </div>
+                        <div class="col-75">
+                          <textarea id="subject" name="subject" placeholder="Escribe algo" style="height:200px" required></textarea>
+                        </div>
+                      </div>
+                      <div class="row" id="form-button">
+                        <input type="submit" value="Enviar" >
+                      </div>
+                    </form>
+                </div>
+            </section>
+
+            <section id="direccion">
+                <h1> Dirección </h1>
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7098.94326104394!2d78.0430654485247!3d27.172909818538997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1385710909804" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                </div>
+            </section>
+            <footer>
+            </footer>
+        <main>
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   
+</body>
+</html>
